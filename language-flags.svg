@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="flag-en" viewBox="0 0 30 20">
+    <rect width="30" height="20" fill="#012169"/>
+    <path d="M0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="4"/>
+    <path d="M0 0 30 20M30 0 0 20" stroke="#c8102e" stroke-width="1.5"/>
+    <path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="7"/>
+    <path d="M15 0v20M0 10h30" stroke="#c8102e" stroke-width="4"/>
+  </symbol>
+  <symbol id="flag-fr" viewBox="0 0 30 20">
+    <rect width="10" height="20" fill="#0055a4"/>
+    <rect x="10" width="10" height="20" fill="#fff"/>
+    <rect x="20" width="10" height="20" fill="#ef4135"/>
+  </symbol>
+  <symbol id="flag-es" viewBox="0 0 30 20">
+    <rect width="30" height="5" fill="#aa151b"/>
+    <rect y="5" width="30" height="10" fill="#f1bf00"/>
+    <rect y="15" width="30" height="5" fill="#aa151b"/>
+  </symbol>
+  <symbol id="flag-de" viewBox="0 0 30 20">
+    <rect width="30" height="6.67" fill="#000"/>
+    <rect y="6.67" width="30" height="6.66" fill="#d00"/>
+    <rect y="13.33" width="30" height="6.67" fill="#ffce00"/>
+  </symbol>
+  <symbol id="flag-it" viewBox="0 0 30 20">
+    <rect width="10" height="20" fill="#009246"/>
+    <rect x="10" width="10" height="20" fill="#fff"/>
+    <rect x="20" width="10" height="20" fill="#ce2b37"/>
+  </symbol>
+  <symbol id="flag-pt" viewBox="0 0 30 20">
+    <rect width="12" height="20" fill="#046a38"/>
+    <rect x="12" width="18" height="20" fill="#da291c"/>
+  </symbol>
+  <symbol id="flag-nl" viewBox="0 0 30 20">
+    <rect width="30" height="6.67" fill="#ae1c28"/>
+    <rect y="6.67" width="30" height="6.66" fill="#fff"/>
+    <rect y="13.33" width="30" height="6.67" fill="#21468b"/>
+  </symbol>
+</svg>

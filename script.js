@@ -303,6 +303,7 @@ const translations = {
 };
 
 const languageSelect = document.querySelector("#language-select");
+const languageFlag = document.querySelector(".language-flag use");
 const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".main-nav");
 
@@ -314,7 +315,9 @@ function setLanguage(language) {
     if (translation) element.innerHTML = translation;
   });
   languageSelect.value = selected;
-  languageSelect.setAttribute("aria-label", translations[selected].languageLabel);
+  const selectedOption = languageSelect.selectedOptions[0];
+  languageFlag.setAttribute("href", `language-flags.svg#flag-${selected}`);
+  languageSelect.setAttribute("aria-label", `${translations[selected].languageLabel}: ${selectedOption.textContent}`);
   menuToggle.setAttribute("aria-label", translations[selected].menuOpen);
   try {
     localStorage.setItem("nexora-language", selected);
