@@ -1,7 +1,7 @@
 const translations = {
   en: {
     navServices: "Services", navWork: "Our work", navAbout: "About us", navContact: "Contact <span aria-hidden=\"true\">↗</span>",
-    languageLabel: "Select language", menuOpen: "Open menu", menuClose: "Close menu", heroEyebrow: "YOUR PARTNER IN WHAT'S NEXT",
+    languageLabel: "Select language", menuOpen: "Open menu", menuClose: "Close menu", welcomeText: "Welcome to PHANTOM SPY TECH", heroEyebrow: "YOUR PARTNER IN WHAT'S NEXT",
     heroTitle: "Technology that moves <span>your business</span> forward.",
     heroDescription: "We turn ambitious ideas into useful digital experiences. From first sketch to launch and beyond, we make technology work for people.",
     heroCta: "Let's talk", heroSecondary: "Explore our work", proofTitle: "Our Team",
@@ -44,7 +44,7 @@ const translations = {
   },
   fr: {
     navServices: "Services", navWork: "Nos projets", navAbout: "À propos", navContact: "Contact <span aria-hidden=\"true\">↗</span>",
-    languageLabel: "Choisir la langue", menuOpen: "Ouvrir le menu", menuClose: "Fermer le menu", heroEyebrow: "VOTRE PARTENAIRE POUR LA SUITE",
+    languageLabel: "Choisir la langue", menuOpen: "Ouvrir le menu", menuClose: "Fermer le menu", welcomeText: "Bienvenue chez PHANTOM SPY TECH", heroEyebrow: "VOTRE PARTENAIRE POUR LA SUITE",
     heroTitle: "La technologie qui fait <span>avancer votre entreprise.</span>",
     heroDescription: "Nous transformons les idées ambitieuses en expériences numériques utiles. Du premier croquis au lancement, nous mettons la technologie au service des personnes.",
     heroCta: "Parlons-en", heroSecondary: "Découvrir nos projets", proofTitle: "Notre équipe",
@@ -87,7 +87,7 @@ const translations = {
   },
   es: {
     navServices: "Servicios", navWork: "Proyectos", navAbout: "Nosotros", navContact: "Contacto <span aria-hidden=\"true\">↗</span>",
-    languageLabel: "Seleccionar idioma", menuOpen: "Abrir menú", menuClose: "Cerrar menú", heroEyebrow: "TU ALIADO PARA LO QUE VIENE",
+    languageLabel: "Seleccionar idioma", menuOpen: "Abrir menú", menuClose: "Cerrar menú", welcomeText: "Bienvenido a PHANTOM SPY TECH", heroEyebrow: "TU ALIADO PARA LO QUE VIENE",
     heroTitle: "Tecnología que impulsa <span>tu negocio.</span>",
     heroDescription: "Convertimos ideas ambiciosas en experiencias digitales útiles. Desde el primer boceto hasta el lanzamiento, hacemos que la tecnología trabaje para las personas.",
     heroCta: "Hablemos", heroSecondary: "Ver proyectos", proofTitle: "Nuestro equipo",
@@ -130,7 +130,7 @@ const translations = {
   },
   de: {
     navServices: "Leistungen", navWork: "Projekte", navAbout: "Über uns", navContact: "Kontakt <span aria-hidden=\"true\">↗</span>",
-    languageLabel: "Sprache auswählen", menuOpen: "Menü öffnen", menuClose: "Menü schließen", heroEyebrow: "IHR PARTNER FÜR DEN NÄCHSTEN SCHRITT",
+    languageLabel: "Sprache auswählen", menuOpen: "Menü öffnen", menuClose: "Menü schließen", welcomeText: "Willkommen bei PHANTOM SPY TECH", heroEyebrow: "IHR PARTNER FÜR DEN NÄCHSTEN SCHRITT",
     heroTitle: "Technologie, die <span>Ihr Unternehmen</span> voranbringt.",
     heroDescription: "Wir machen aus ambitionierten Ideen nützliche digitale Erlebnisse. Vom ersten Entwurf bis zum Start setzen wir Technologie für Menschen ein.",
     heroCta: "Lassen Sie uns reden", heroSecondary: "Projekte entdecken", proofTitle: "Unser Team",
@@ -173,7 +173,7 @@ const translations = {
   },
   it: {
     navServices: "Servizi", navWork: "Progetti", navAbout: "Chi siamo", navContact: "Contatti <span aria-hidden=\"true\">↗</span>",
-    languageLabel: "Seleziona la lingua", menuOpen: "Apri il menu", menuClose: "Chiudi il menu", heroEyebrow: "AL TUO FIANCO, VERSO IL FUTURO",
+    languageLabel: "Seleziona la lingua", menuOpen: "Apri il menu", menuClose: "Chiudi il menu", welcomeText: "Benvenuti in PHANTOM SPY TECH", heroEyebrow: "AL TUO FIANCO, VERSO IL FUTURO",
     heroTitle: "La tecnologia che fa crescere <span>la tua azienda.</span>",
     heroDescription: "Trasformiamo idee ambiziose in esperienze digitali utili. Dal primo schizzo al lancio, mettiamo la tecnologia al servizio delle persone.",
     heroCta: "Parliamone", heroSecondary: "Scopri i progetti", proofTitle: "Il nostro team",
@@ -216,7 +216,7 @@ const translations = {
   },
   pt: {
     navServices: "Serviços", navWork: "Projetos", navAbout: "Sobre nós", navContact: "Contacto <span aria-hidden=\"true\">↗</span>",
-    languageLabel: "Selecionar idioma", menuOpen: "Abrir menu", menuClose: "Fechar menu", heroEyebrow: "O SEU PARCEIRO PARA O QUE VEM A SEGUIR",
+    languageLabel: "Selecionar idioma", menuOpen: "Abrir menu", menuClose: "Fechar menu", welcomeText: "Bem-vindo à PHANTOM SPY TECH", heroEyebrow: "O SEU PARCEIRO PARA O QUE VEM A SEGUIR",
     heroTitle: "Tecnologia que faz <span>o seu negócio</span> avançar.",
     heroDescription: "Transformamos ideias ambiciosas em experiências digitais úteis. Do primeiro esboço ao lançamento, fazemos a tecnologia trabalhar para as pessoas.",
     heroCta: "Vamos conversar", heroSecondary: "Explore os projetos", proofTitle: "A nossa equipa",
@@ -259,7 +259,7 @@ const translations = {
   },
   nl: {
     navServices: "Diensten", navWork: "Ons werk", navAbout: "Over ons", navContact: "Contact <span aria-hidden=\"true\">↗</span>",
-    languageLabel: "Taal kiezen", menuOpen: "Menu openen", menuClose: "Menu sluiten", heroEyebrow: "UW PARTNER VOOR DE VOLGENDE STAP",
+    languageLabel: "Taal kiezen", menuOpen: "Menu openen", menuClose: "Menu sluiten", welcomeText: "Welkom bij PHANTOM SPY TECH", heroEyebrow: "UW PARTNER VOOR DE VOLGENDE STAP",
     heroTitle: "Technologie die <span>uw bedrijf</span> vooruithelpt.",
     heroDescription: "We maken van ambitieuze ideeën waardevolle digitale ervaringen. Van eerste schets tot lancering: technologie die voor mensen werkt.",
     heroCta: "Laten we praten", heroSecondary: "Bekijk ons werk", proofTitle: "Ons team",
