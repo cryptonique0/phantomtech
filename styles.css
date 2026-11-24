@@ -109,16 +109,20 @@ h1, h2, h3 { font-family: var(--font-display); }
 
 .services { padding-top: 50px; padding-bottom: 116px; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 35px; margin-bottom: 42px; }
+.services .section-heading { flex-direction: column; align-items: center; gap: 14px; margin-bottom: 42px; text-align: center; }
+.services .section-heading > div { display: flex; flex-direction: column; align-items: center; }
 .section-heading .eyebrow { margin-bottom: 17px; }
 .section-heading h2 { margin: 0; font-size: clamp(36px, 4vw, 49px); font-weight: 500; letter-spacing: -.06em; }
-.section-heading > p { max-width: 325px; margin-bottom: 3px; color: var(--muted); font-size: 12px; line-height: 1.8; }
-.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #dfe4dc; }
-.service-card { position: relative; min-height: 256px; padding: 24px 23px 21px 0; border-right: 1px solid #dfe4dc; }
-.service-card:not(:first-child) { padding-left: 22px; }.service-card:last-child { border-right: 0; }
-.service-number { color: #939c95; font-size: 9px; letter-spacing: .08em; }
-.service-icon { position: absolute; top: 20px; right: 22px; color: #668f3c; font-size: 25px; }
-.service-card h3 { margin: 47px 0 10px; font-size: 17px; font-weight: 600; letter-spacing: -.035em; }
-.service-card p { min-height: 56px; margin-bottom: 17px; color: var(--muted); font-size: 11px; line-height: 1.75; }
+.section-heading > p { max-width: 420px; margin-bottom: 3px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+.services .section-heading > p { max-width: 500px; margin: 0; }
+.service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 34px 30px; }
+.service-card { display: flex; min-width: 0; min-height: 370px; flex-direction: column; }
+.service-card:last-child { grid-column: 2; }
+.service-image { display: block; width: 100%; height: 190px; margin: 0 0 22px; border-radius: 3px; background: #edf0e9; object-fit: cover; }
+.service-image-bitcoin { background: #064437; object-fit: contain; }
+.service-image-social { background: #e6e6e6; object-fit: contain; }
+.service-card h3 { margin: 0 0 10px; font-size: 17px; font-weight: 600; letter-spacing: -.035em; }
+.service-card p { flex: 1; min-height: 56px; margin-bottom: 17px; color: var(--muted); font-size: 11px; line-height: 1.75; }
 .service-card > a { display: inline-flex; align-items: center; gap: 11px; font-size: 10px; font-weight: 600; }.service-card > a span { color: #84a84e; font-size: 14px; }
 .services-note { margin: 22px 0 0; color: #647064; font-size: 11px; font-weight: 600; }
 
@@ -145,7 +149,7 @@ h1, h2, h3 { font-family: var(--font-display); }
 .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .testimonial-card { display: flex; min-height: 205px; flex-direction: column; padding: 18px; border: 1px solid rgba(230,239,226,.14); border-radius: 4px; background: rgba(255,255,255,.035); }
 .review-person { display: flex; align-items: center; gap: 10px; }
-.review-avatar { display: grid; width: 34px; height: 34px; flex: 0 0 34px; place-items: center; border: 1px solid rgba(201,244,106,.35); border-radius: 50%; background: #2b4033; color: var(--green); font-size: 10px; font-weight: 700; }
+.review-avatar { display: block; width: 34px; height: 34px; flex: 0 0 34px; overflow: hidden; border: 1px solid rgba(201,244,106,.35); border-radius: 50%; background: #2b4033; }
 .review-person h4 { margin: 0; color: #f0f3ed; font: 600 11px var(--font-body); }
 .review-quote { flex: 1; margin: 16px 0; color: #c1cbc1; font-size: 10px; line-height: 1.8; }
 .review-rating { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #f0f3ed; font-size: 10px; font-weight: 600; }
@@ -203,8 +207,7 @@ h1, h2, h3 { font-family: var(--font-display); }
   .intro { gap: 25px; }
   .vision-section { gap: 25px; }
   .why-card { padding-right: 16px; }.why-card:not(:first-child) { padding-left: 16px; }
-  .service-card { padding-right: 14px; }.service-card:not(:first-child) { padding-left: 14px; }
-  .service-icon { right: 12px; }.service-card h3 { font-size: 15px; }
+  .service-grid { gap: 28px 20px; }.service-card { min-height: 350px; }.service-image { height: 160px; }.service-card h3 { font-size: 15px; }
   .contact-section { gap: 35px; }
   .experience-inner { gap: 32px; }
   .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
@@ -232,7 +235,8 @@ h1, h2, h3 { font-family: var(--font-display); }
   .round-link { flex-basis: 37px; width: 37px; height: 37px; }
   .why-us { padding-top: 56px; padding-bottom: 68px; }.why-us .section-heading { margin-bottom: 25px; }.why-grid { grid-template-columns: 1fr; }.why-card,.why-card:not(:first-child) { min-height: auto; padding: 18px 0 21px; border-right: 0; border-bottom: 1px solid #dfe4dc; }.why-card:last-child { border-bottom: 0; }.why-icon { display: inline-block; margin: 0 11px 12px 0; vertical-align: middle; }.why-card .service-number { vertical-align: middle; }.why-card h3 { font-size: 15px; }
   .services { padding-top: 24px; padding-bottom: 77px; }.section-heading { display: block; margin-bottom: 28px; }.section-heading h2 { font-size: 39px; }.section-heading > p { margin-top: 15px; }
-  .service-grid { grid-template-columns: 1fr 1fr; }.service-card { min-height: 230px; padding: 18px 13px 17px 0; border-bottom: 1px solid #dfe4dc; }.service-card:not(:first-child) { padding-left: 13px; }.service-card:nth-child(2n) { border-right: 0; }.service-card:last-child { border-bottom: 0; }.service-icon { top: 15px; right: 10px; font-size: 21px; }.service-card h3 { margin-top: 42px; font-size: 14px; }.service-card p { min-height: 66px; font-size: 10px; }
+  .services .section-heading { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 28px; }.services .section-heading > p { margin-top: 0; }
+  .service-grid { grid-template-columns: 1fr 1fr; gap: 24px 16px; }.service-card:last-child { grid-column: auto; }.service-card { min-height: 350px; }.service-image { height: 120px; }.service-card h3 { font-size: 14px; }.service-card p { min-height: 66px; font-size: 10px; }
   .experience-section { padding: 62px 0; }.experience-inner { grid-template-columns: 1fr; gap: 32px; }.experience-copy h2 { font-size: 39px; }.stat-card { min-height: 100px; padding: 14px; }.stat-card strong { font-size: 30px; }
   .testimonials-block { padding-top: 7px; scroll-margin-top: 70px; }.testimonials-heading { display: block; }.testimonials-heading h3 { font-size: 26px; }.testimonials-heading > p { margin-top: 12px; }.testimonial-grid { grid-template-columns: 1fr; }.testimonial-card { min-height: 175px; }
   .contact-section { display: block; padding-top: 76px; padding-bottom: 72px; }.contact-intro h2 { font-size: 47px; }.contact-intro > p:not(.eyebrow) { font-size: 12px; }.contact-details { padding-top: 40px; }.contact-decoration { right: -155px; bottom: -211px; transform: scale(.75); }
