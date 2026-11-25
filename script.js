@@ -9,8 +9,8 @@ const translations = {
     introLabel: "ABOUT US", introTitle: "Welcome to <span>PHANTOM SPY TECH.</span>",
     introDescription: "A high-tech platform designed specifically for espionage and surveillance.",
     visionEyebrow: "OUR VISION",
-    visionDescription: "In a world where information spreads faster than ever before, the concepts of precision, discretion, and cutting-edge capabilities remain captivating.
-PHANTOM SPY TECH was developed as a showcase to illustrate how a modern brand for private intelligence and digital investigations could present itself online. Every page, section, and visual element has been crafted to highlight professional web architecture, responsive layouts, a dark-mode aesthetic, and conversion-driven storytelling.",
+    visionDescription: `In a world where information spreads faster than ever before, the concepts of precision, discretion, and cutting-edge capabilities remain captivating.
+PHANTOM SPY TECH was developed as a showcase to illustrate how a modern brand for private intelligence and digital investigations could present itself online. Every page, section, and visual element has been crafted to highlight professional web architecture, responsive layouts, a dark-mode aesthetic, and conversion-driven storytelling.`,
     whyEyebrow: "WHY CHOOSE US", whyTitle: "What sets us <span>apart.</span>",
     whyDescription: "Careful service, clear expectations, and practical technical support built around your needs.",
     whyOneTitle: "Precision at every step", whyOneDescription: "We take care with each task, confirm the scope in advance, and work toward a high-quality result.",
