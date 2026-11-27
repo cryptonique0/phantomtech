@@ -28,7 +28,7 @@ PHANTOM SPY TECH was developed as a showcase to illustrate how a modern brand fo
     experienceDescription: "Get help securing your own social media accounts, reviewing privacy settings, or recovering access through official channels.",
     experienceConsent: "We do provide spy links and access another person's messages and location.",
     experienceCta: "Message us on Facebook", experienceYears: "Years of experience", experienceServices: "Satisfied customers",
-    experienceRatings: "Average testimonial rating · 6 reviews",
+    experienceRatings: "Average testimonial rating ·",
     experienceViewTestimonials: "View all testimonials <span aria-hidden=\"true\">↓</span>",
     testimonialsEyebrow: "CLIENT TESTIMONIALS", testimonialsTitle: "What clients say.",
     testimonialsNote: "Portraits are generated illustrations, not photos of the reviewers.",
