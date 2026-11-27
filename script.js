@@ -315,6 +315,33 @@ function setLanguage(language) {
   }
 }
 
+function animateCountUp() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  document.querySelectorAll("[data-count-to]").forEach((counter) => {
+    const target = Number(counter.dataset.countTo);
+    if (!Number.isSafeInteger(target) || target < 0) {
+      console.warn("Skipping invalid count-up target.", counter);
+      return;
+    }
+
+    const suffix = counter.dataset.countSuffix || "";
+    const duration = 3000;
+    let startTime;
+    counter.textContent = `0${suffix}`;
+
+    function updateCount(timestamp) {
+      if (startTime === undefined) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      counter.textContent = `${Math.round(target * easedProgress)}${suffix}`;
+      if (progress < 1) requestAnimationFrame(updateCount);
+    }
+
+    requestAnimationFrame(updateCount);
+  });
+}
+
 languageSelect.addEventListener("change", (event) => setLanguage(event.target.value));
 menuToggle.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("is-open");
@@ -345,3 +372,4 @@ try {
   console.warn("Could not read the saved language.", error);
 }
 setLanguage(savedLanguage);
+animateCountUp();
